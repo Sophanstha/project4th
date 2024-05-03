@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+/* contact */
+#contacttitle{
+    width: 100%;
+    height:65vh;
+    background-image: linear-gradient(to bottom right, #BCAFAF, #3F3E3E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#contacttitle h1{
+    font-size: 95px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    
+}
+#contacttitle p{
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+}
+#chelp{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    z-index: 10;
+}
+.hdiv{
+    width: 300px;
+    background-color: #2a2a2a;
+    height: 280px;
+    margin: 0 70px;
+    transform: translateY(-50px);
+    border-radius:50px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hdiv h1{
+    margin-top:-40px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+.hdiv p{
+    margin: 0 20px 10px;
+    text-align: center;
+    font-size: 13px;
+  font-family: "Kode Mono", monospace;
+
+}
+.hdiv a{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px ;
+}
+.divfrom{
+    overflow: hidden;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divfrom .from{
+    width: 50%;
+    height: 80vh;
+    border: 4px solid #2a2a2a;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.from h1{
+    color: #2a2a2a;
+    margin: 5px 0px 20px 20px;
+    font-size: 50px;
+}
+.from input{
+    display: inline;
+    width: 40%;
+    height: 10vh;
+    margin: 5px 5% 20px 20px;
+    text-align: center;
+    border: 2px solid #2a2a2a;
+    border-radius: 10px;
+    color: black;
+}
+.from input::placeholder{
+  font-size: 20px;
+  font-size: 20px;
+}
+.from textarea{
+    width: 90%;
+    margin: 5px 5% 20px 20px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 25vh;
+}
+.from textarea::placeholder{
+    padding: 10px;
+}
+.from .Btn {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    border-radius: 45px;
+    border: none;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    margin: 0 20px;
+  }
+  
+ .from .Btn::before {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.678);
+    content: "";
+    filter: blur(1px);
+    top: 7px;
+    border-radius: 50%;
+  }
+  
+.from .Btn::after {
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background-color: rgba(250, 250, 250, 0.137);
+    content: "";
+    filter: blur(1px);
+    bottom: 7px;
+    border-radius: 50%;
+  }
+  
+ .from .Btn:hover {
+    animation: jello-horizontal 0.9s both;
+  }
+  
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/* shop */
+
+.shophead{
+  width: 100%;
+  height: 70vh;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#male{
+  background-image : linear-gradient(rgba(3, 3, 3, 0.7),rgba(3, 3, 3, 0.7)),url("https://media.istockphoto.com/id/1741731427/photo/young-asian-salesman-working-in-a-luxury-clothing-and-footwear-boutique-for-men.jpg?s=612x612&w=0&k=20&c=6-VeUYbffscIht-BkLW8VbAmLqbuHCtTwwTZ9SrNaEE=");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.shophead h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-family: 'Signika', sans-serif;
+  padding: 10px;
+  }
+.shophead p{
+      font-size: 20px;
+      font-weight: bold;
+  }
+#newin{
+  /* position: relative;
+  top: 200px;*/
+  margin-top: 15px; 
+}
+#newin h1{
+  text-align: center;
+  font-size: 60px;
+color: #2a2a2a;
+font-family: "Oswald", sans-serif; 
+}
+#newin samp{
+  color: yellowgreen;
+  font-family: 'Satisfy', cursive;
+}
+.newmaindiv{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  flex-wrap: nowrap;
+  gap: 4%;
+}
+.newmaindiv .newproduct{
+  width: 20%;
+  height: 55vh;
+  background-color:white;
+  position: relative;
+}
+.newmaindiv .newproduct .new{
+  position: absolute;
+  display: block;
+  color: #000000;
+  z-index: 1000;
+  font-family: 'Signika', sans-serif;
+  font-weight: bolder;
+  /* background-color: whitesmoke;  */
+  font-size: 20px;
+}
+.newproduct .pdtimg{
+  /* background-color: aliceblue; */
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+#ontrend{
+  /* position: relative;
+  top: 200px;
+  margin-top: 15px; */
+}
+.pdtimg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.pdtimg .top-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  object-fit: cover;
+  object-position: center;
+  transition: all ease 0.7s;
+}
+.pdtimg .top-img:hover{
+  opacity: 1;
+}
+.newproduct h3{
+  color:black;
+  padding: 10px 10px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.newmaindiv .title{
+  font-weight: 400;
+}
+ /* p{
+  padding: 12px 10px 0;
+  font-weight: 900;
+  color: #3F3E3E;
+  z-index: 4;
+} */
+#productcat{
+  /* top: 200px; */
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  gap: 20px;
+  /* margin-top: 40px; */
+  background-color: #ececec;
+}
+
+#productcat .productimg{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+.mainimg{
+  width: 100%;
+  height: 60%;
+/* background-color: #2a2a2a; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mainimg img{
+  mix-blend-mode: darken;
+  width: 70%;
+  height: 90%;
+  object-fit: cover;
+}
+.allsmallimg{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  
+}
+.allsmallimg img{
+  width: 150px;
+  height: 120px;
+  object-fit: cover; 
+}
+#productcat .productinfo{
+  width: 50%;
+  height: 100%;
+  /* background-color:rebeccapurple; */
+  overflow: hidden;
+  color:black;
+
+}
+.productinfo h1{
+  font-size: 50px;
+  margin: 60px 20px 30px;
+  color:black;
+  font-weight: bolder;
+  font-family: 'Signika', sans-serif;
+  border-bottom:3px dotted solid black ;
+}
+.productinfo h2{
+  color: #000000;
+font-size: 35px;
+margin: 0 30px 12px;
+}
+.productinfo select{
+  color: #000000;
+margin: 0 30px 12px;
+padding: 12px;
+font-size: 20px;
+}
+.productinfo option{
+  color: #000000;
+}
+.productinfo button{
+margin: 0 0 12px;
+width: 150px;
+height: 60px;
+font-size: 20px;
+color: white;
+background-color: green;
+letter-spacing: 2px;
+border-radius: 10px;
+transition: all 0.5s ease;
+}
+.productinfo button:hover{
+  color: green;
+background-color:white;
+cursor: pointer;
+}
+.productinfo h3{
+  color: #000000;
+font-size: 20px;
+margin: 25px 30px 12px;
+}
+.productinfo p{
+  color: #2a2a2a;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+/* shop on trend */
+#ontrend{
+  margin-top: 15px;
+}
+#ontrend h1{
+  text-align: center;
+  font-size: 60px;
+color: #2a2a2a;
+font-family: "Oswald", sans-serif; 
+}
+#ontrend samp{
+  color: yellowgreen;
+  font-family: 'Satisfy', cursive;
+}
+
+.ontrendmain{
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.ontrendmain .ontrendpdt{
+  width: 20%;
+  height: 55vh;
+  background-color:white;
+  margin: 20px 0; 
+  position: relative; 
+}
+.ontrendmain .ontrendpdt  .pdtimg{
+  background-color: #ececec;
+  width: 100%;
+  height: 30vh;
+  position: relative;
+}
+.ontrendpdt h3{
+  color:black;
+  padding: 10px 10px 0;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.ontrendpdt .title{
+  font-weight: 400;
+}
+.ontrendpdt p{
+  padding: 10px;
+  font-weight: 400;
+  color: #3F3E3E;
+}
+.ontrendpdt .new{
+  padding: 12px 10px 0;
+  font-weight: 900;
+  color:black;
+  z-index: 4;
+  position: absolute;
+  top:-2px;
+  left: 2px;
+  font-size: 20px
+}
+.addto-cart {
+  width: 140px;
+  height: 20px;
+  border-radius: 12px;
+  border: none;
+  background-color: rgb(255, 208, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  margin :5px auto ;
+}
+
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(17, 17, 17);
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+
+.addto-cart:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+}
+
+.addto-cart:hover .text {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.addto-cart:active {
+  transform: scale(0.5);
+  transition-duration: .5s;
+}
+
+.activeshop{
+  display: none;
+}
+/* .female{
+  .shophead{
+    width: 100%;
+    height: 70vh;
+    z-index: 10;
+    background-image : linear-gradient(rgba(3, 3, 3, 0.7),rgba(3, 3, 3, 0.7)),url("");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  } */
+#female{
+    background-image : url("https://media.istockphoto.com/id/1481259967/photo/workers-in-a-shoe-store.jpg?s=1024x1024&w=is&k=20&c=70eY0S_7HudBKHWEKRPMa3XwS5t75XDPjBM8el6IO28=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
